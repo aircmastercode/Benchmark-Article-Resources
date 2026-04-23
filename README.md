@@ -41,7 +41,7 @@ Expected row counts after loading:
 | `orderitem` | 68 |
 | `JDXMetadata` | 0 (managed by Gilhari/JDX at runtime) |
 
-> **JDX safety note.** `schema.sql` creates a `JDXMetadata` table at the end via `CREATE TABLE IF NOT EXISTS`. This table must exist before Gilhari/JDX connects to the schema — if it is missing, JDX may treat the schema as unmanaged and drop existing tables during ORM initialization. The statement was verified on PostgreSQL (all five `TEXT` columns — `jdxORMId`, `jdxTimestamp`, `jdxMetaVersionId`, `jdxMetaFileName`, `jdxMetaInfo` — materialize correctly, and re-runs are a no-op).
+> **JDX safety note.** `schema.sql` creates a `JDXMetadata` table at the end via `CREATE TABLE IF NOT EXISTS`. This table must exist before Gilhari/JDX connects to the schema — if it is missing, JDX may treat the schema as unmanaged and drop existing tables during ORM initialization.
 
 ## Tasks (identical in both files)
 
