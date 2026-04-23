@@ -5,8 +5,6 @@ Companion resources for the article _The Hidden Tax of AI Database Access: An In
 **Published article:** [The Hidden Tax of AI Database Access: Two MCP Servers, Two Models, 20 Benchmark Runs](https://medium.com/@tanushsinghal22082004/the-hidden-tax-of-ai-database-access-two-mcp-servers-two-models-20-benchmark-runs-a524169ac6a3)
 
 
-The Medium slug shortens the headline; the on-page title matches the italicized title above. Methodology, token accounting, versions (ORMCP v0.5.1, Postgres MCP v0.3.0), and results are in that article.
-
 These are the two prompt files used verbatim in the benchmark. Each contains the same four tasks, framed in a different vocabulary for the MCP server under test.
 
 ## Files
